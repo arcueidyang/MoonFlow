@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>About</h2>
+    <div>
+        <img ng-src="{{Info.thumbnailUrl}}">
+        <div>{{Info.name}}</div>
+        <div ng-repeat="introLine in Info.introduction">
+            <div>{{introLine}}</div>
+        </div>
+        <button class="facebook nav-icon" ng-click="navigateToFacebook()"></button>
+        <button class="github nav-icon" ng-click="navigateToGithub()"></button>
+    </div>
+</div>
