@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.25641027">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="About.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/Views/About.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewPostController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewPostController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.265625">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -99,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/Client/Scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -110,8 +110,8 @@
       <file leaf-file-name="NewPost.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/Views/NewPost.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,10 +142,10 @@
         <option value="$PROJECT_DIR$/Client/About.html" />
         <option value="$PROJECT_DIR$/Client/NewPost.html" />
         <option value="$PROJECT_DIR$/Server/webServer.js" />
-        <option value="$PROJECT_DIR$/Client/Index.html" />
         <option value="$PROJECT_DIR$/Client/Views/About.html" />
         <option value="$PROJECT_DIR$/Client/Views/NewPost.html" />
         <option value="$PROJECT_DIR$/Client/Scripts/app.js" />
+        <option value="$PROJECT_DIR$/Client/Index.html" />
       </list>
     </option>
   </component>
@@ -619,6 +619,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1454668800000" expanded="true" signature="12574:13321" placeholder="..." />
+            <marker date="1454668800000" expanded="true" signature="13861:14014" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="14096:14205" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="14290:14402" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="14474:15232" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="14653:14923" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="14752:14906" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="15390:15977" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="29289:30003" placeholder="..." />
+            <marker date="1454668800000" expanded="true" signature="29614:29684" placeholder="..." />
+            <marker date="1454668800000" expanded="true" signature="30062:30167" placeholder="..." />
+            <marker date="1454668800000" expanded="true" signature="30229:30391" placeholder="..." />
+            <marker date="1454668800000" expanded="true" signature="30475:30661" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="30685:30720" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="30777:31075" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="31108:31140" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="31188:31217" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="31265:31298" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="31428:32011" placeholder="[...]" />
+            <marker date="1454668800000" expanded="true" signature="31524:32010" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="31594:31738" placeholder="{&quot;templateUrl&quot;: 'book.html'...}" />
+            <marker date="1454668800000" expanded="true" signature="31793:31946" placeholder="{&quot;templateUrl&quot;: 'chapter.html'...}" />
+            <marker date="1454668800000" expanded="true" signature="32047:32281" placeholder="[...]" />
+            <marker date="1454668800000" expanded="true" signature="32141:32280" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="32317:32447" placeholder="[...]" />
+            <marker date="1454668800000" expanded="true" signature="32357:32446" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="32486:32619" placeholder="[...]" />
+            <marker date="1454668800000" expanded="true" signature="32526:32618" placeholder="{...}" />
+            <marker date="1454668800000" expanded="true" signature="32756:33289" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,30 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Views/About.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Views/NewPost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -672,23 +679,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js">
+    <entry file="file://$PROJECT_DIR$/Client/Views/NewPost.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.265625">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Views/About.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25641027">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

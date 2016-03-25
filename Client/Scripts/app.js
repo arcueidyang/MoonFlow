@@ -6,11 +6,10 @@ var moonflow = angular.module("moonflow", ["ngRoute"])
     .config(function($routeProvider) {
         $routeProvider.when("/newPost", {
             templateUrl: "Views/NewPost.html",
-            controller: "Scripts/Controllers/NewPostController"
+            controller: "NewPostController"
         });
-
-//       $routeProvider.when("/about", {
-//           templateUrl: "Views/About.html",
-//            controller: "Controllers/AboutController"
-//        });
+        $routeProvider.when("/about", {
+            templateUrl: "Views/About.html",
+            controller: "AboutController"
+        });
     });
