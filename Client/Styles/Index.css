@@ -1,0 +1,18 @@
+.page {
+    margin: 0 30px;
+}
+
+.top-nav .nav {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: solid 1px #666666;
+}
+
+.top-nav .nav li {
+    display: inline;
+    padding: 10px;
+}
+
+.top-nav .nav li a {
+    text-decoration: none;
+}
