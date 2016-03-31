@@ -4,6 +4,8 @@
 
 moonflow.controller("NewPostController", function NewPostController($scope) {
 
+    CKEDITOR.replace("newPostContent");
+
     $scope.newPost = {
         title: "",
         author: "",
@@ -11,7 +13,7 @@ moonflow.controller("NewPostController", function NewPostController($scope) {
     };
 
     $scope.submitPost = function() {
-        alert($scope.newPost.title  + " is getting posted successfully!");
+        //TODO need back end service to handle this
     };
 
     $scope.cancel = function() {

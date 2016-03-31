@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html ng-app="moonflow">
-    <body>
-        <div class="top-nav">
-            <ul class="nav">
-                <li><a href="#/newPost">New Post</a></li>
-                <li><a href="#/about">About</a></li>
-            </ul>
+    <head>
+        <title>MoonFlow</title>
+        <link rel="shortcut icon" type="image/x-icon" href="Assets/title-icon.gif" />
+        <link rel="stylesheet" type="text/css" href="Styles/Index.css" />
+    </head>
+    <body class="page">
+        <div class="content">
+            <div class="top-nav">
+                <ul class="nav">
+                    <li><a href="#/blog">Blog</a></li>
+                    <li><a href="#/newPost">New Post</a></li>
+                    <li><a href="#/about">About</a></li>
+                </ul>
+            </div>
+            <ng-view></ng-view>
         </div>
-        <ng-view></ng-view>
     </body>
+    <script src="Library/require.js" data-main="Scripts/main"></script>
     <script src="Library/angular.js"></script>
     <script src="Library/angular-route.js"></script>
     <script src="Scripts/app.js"></script>
+    <script src="Library/ckeditor/ckeditor.js"></script>
     <script src="Scripts/Controllers/AboutController.js"></script>
     <script src="Scripts/Controllers/NewPostController.js"></script>
+    <script src="Scripts/Controllers/BlogController.js"></script>
 </html>

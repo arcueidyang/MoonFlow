@@ -12,4 +12,8 @@ var moonflow = angular.module("moonflow", ["ngRoute"])
             templateUrl: "Views/About.html",
             controller: "AboutController"
         });
+        $routeProvider.when("/blog", {
+            templateUrl: "Views/Blog.html",
+            controller: "BlogController"
+        });
     });

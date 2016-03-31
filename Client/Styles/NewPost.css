@@ -1,11 +1,5 @@
 .new-post input {
-    width: 80%;
+    width: 99%;
     height: 40px;
-    margin: 20px;
-}
-
-.new-post textarea {
-    width: 80%;
-    height: 500px;
-    margin: 20px;
+    margin: 20px 0;
 }

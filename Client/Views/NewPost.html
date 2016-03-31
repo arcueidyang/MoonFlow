@@ -2,10 +2,10 @@
 <h1>New Post</h1>
 <div class="new-post">
     <div>
-        <input ng-model="newPost.title" placeholder="title of the post"/>
+        <input ng-model="newPost.title"/>
     </div>
     <div>
-        <textarea ng-model="newPost.content" placeholder="blablabla"></textarea>
+        <textarea name="newPostContent" id="newPostContent" ng-model="newPost.content"></textarea>
     </div>
     <div class="buttons">
         <button ng-click="submitPost()">Submit</button>
