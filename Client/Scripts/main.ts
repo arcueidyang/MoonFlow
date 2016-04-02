@@ -20,6 +20,15 @@ require.config({
     }
 });
 
+declare module "angular" {
+    var angular: ng.IAngularStatic;
+    export = angular;
+}
+
+declare module "angular-route" {
+
+}
+
 require(["angular", "router"], function(angular) {
    angular.bootstrap(document, ["moonflow"]);
 });
