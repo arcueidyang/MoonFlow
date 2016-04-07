@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12c0fa4d-3f7c-46f2-84b8-3316330727c8" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.js" afterPath="$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.js" afterPath="$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js" afterPath="$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="moonflow.iws" />
@@ -36,11 +37,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutController.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AboutController.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49684542">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="9" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogController.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewPostController.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44952682">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -120,7 +141,6 @@
         <option value="$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js" />
         <option value="$PROJECT_DIR$/Client/Styles/Blog.css" />
         <option value="$PROJECT_DIR$/Client/Views/Blog.html" />
-        <option value="$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.js" />
         <option value="$PROJECT_DIR$/Client/Scripts/main.js" />
         <option value="$PROJECT_DIR$/Client/Library/angular.d.ts" />
         <option value="$PROJECT_DIR$/Client/Library/jquery.d.ts" />
@@ -133,6 +153,8 @@
         <option value="$PROJECT_DIR$/Client/Scripts/main.ts" />
         <option value="$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.js" />
         <option value="$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.ts" />
+        <option value="$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.js" />
+        <option value="$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.ts" />
       </list>
     </option>
   </component>
@@ -174,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -336,6 +357,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -531,7 +553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js">
+    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -583,7 +605,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js">
+    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
@@ -723,24 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/Styles/Index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -772,9 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023659306">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,7 +795,7 @@
         <state vertical-scroll-proportion="0.38485804">
           <caret line="3190" column="7" selection-start-line="3190" selection-start-column="7" selection-end-line="3190" selection-end-column="7" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -837,10 +842,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/BlogController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/AboutController.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49684542">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Scripts/Controllers/NewPostController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44952682">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
