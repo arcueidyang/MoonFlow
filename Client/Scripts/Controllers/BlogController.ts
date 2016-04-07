@@ -1,20 +1,30 @@
-moonflow.controller("BlogController", function BlogController($scope) {
-    $scope.articles = [];
-    $scope.articles.push({
-        title: "My First article"
-    });
-    $scope.articles.push({
-        title: "My Second article"
-    });
-    $scope.articles.push({
-        title: "My Third article"
-    });
+import angular = requrie("angular");
 
-    $scope.GetArticles = function() {
-        //TODO
-    };
+export class BlogController {
+    private Articles: Array<any>;
 
-    $scope.GetArticle = function(id) {
-        //TODO
-    };
-});
+    constructor() {
+        this.Articles = [];
+
+    }
+
+    private InitAricles() {
+        this.Articles.push({
+            title: "My First article"
+        });
+        this.Articles.push({
+            title: "My Second article"
+        });
+        this.Articles.push({
+            title: "My Third article"
+        });
+    }
+
+    private GetArticles() {
+        //todo
+    }
+
+    private GetArticle(id: string) {
+        //todo
+    }
+}
