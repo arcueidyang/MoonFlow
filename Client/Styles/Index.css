@@ -4,7 +4,7 @@ body {
 }
 
 .page {
-    background-image: url("/Assets/april.jpg");
+    background-image: url("/Client/Assets/april.jpg");
     background-size: cover;
 }
 

@@ -1,9 +1,9 @@
 .facebook {
-    background-image: url("/Assets/facebook.png");
+    background-image: url("/Client/Assets/facebook.png");
 }
 
 .github {
-    background-image: url("/Assets/github.png");
+    background-image: url("/Client/Assets/github.png");
     background-size: cover;
 }
 

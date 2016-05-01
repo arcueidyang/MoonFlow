@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>MoonFlow</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Client/Assets/title-icon.gif" />
+    <link rel="stylesheet" type="text/css" href="Client/Styles/Index.css" />
+
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    
+    <script>
+        System.config({
+           packages: {
+               Client: {
+                   format: "register",
+                   defaultExtension: "js"
+               }
+           } 
+        });
+        System.import(Client/main)
+              .then(null, console.error.bind(console));
+    </script>
+</head>
+<body class="page">
+    <div class="content">
+        <div class="top-nav">
+            <ul class="nav">
+                <li><a href="#/blog">Blog</a></li>
+                <li><a href="#/newPost">New Post</a></li>
+                <li><a href="#/about">About</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <app-root>Loading...</app-root>    
+</body>
+</html>
