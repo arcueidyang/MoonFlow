@@ -2,7 +2,7 @@
 <div>
     <h2>Blog</h2>
 
-    <div class="article-title" ng-repeat="article in articles">
+    <div class="article-title" * ngFor="let article of articles">
         <div>{{article.title}}</div>
     </div>
 </div>

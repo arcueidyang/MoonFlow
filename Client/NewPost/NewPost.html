@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="../Styles/NewPost.css" />
+<h1>New Post</h1>
+<div class="new-post">
+    <div>
+        <input [(ngModel)]="title"/>
+    </div>
+    <div>
+        <textarea name="newPostContent" id="newPostContent" [(ngModel)]="content"></textarea>
+    </div>
+    <div class="buttons">
+        <button (click)="SubmitPost()">Submit</button>
+        <button (click)="Cancel()">Cancel</button>
+    </div>
+</div>
