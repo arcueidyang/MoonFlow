@@ -1,11 +1,11 @@
-import { Component } from "angular2/core";
+import { Component } from "@angular/core";
 
 @Component ({
     selector: "new-post",
     template: "./Blog.html"
 })
 
-export class NewPost {
+export class NewPostComponent {
     public title: string;
     public content: string;
     

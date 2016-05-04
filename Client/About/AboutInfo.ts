@@ -1,12 +1,12 @@
 
-import { Component } from "angular2/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "AboutInfo",  
   template: "./About.html"  
 })
 
-export class AboutInfo {
+export class AboutInfoComponent {
     public title: string;
     public description: string[];        
     
