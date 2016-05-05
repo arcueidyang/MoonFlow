@@ -13,6 +13,7 @@ var router_deprecated_1 = require("@angular/router-deprecated");
 var Blog_1 = require("./App/Blog/Blog");
 var NewPost_1 = require("./App/NewPost/NewPost");
 var AboutInfo_1 = require("./App/About/AboutInfo");
+var Book_1 = require("./App/Book/Book");
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -20,13 +21,22 @@ var AppComponent = (function () {
         core_1.Component({
             selector: "app-root",
             templateUrl: "Client/AppBase.html",
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES, Blog_1.BlogComponent, NewPost_1.NewPostComponent, AboutInfo_1.AboutInfoComponent],
-            providers: [router_deprecated_1.ROUTER_PROVIDERS]
+            directives: [
+                router_deprecated_1.ROUTER_DIRECTIVES,
+                Blog_1.BlogComponent,
+                NewPost_1.NewPostComponent,
+                AboutInfo_1.AboutInfoComponent,
+                Book_1.BookComponent
+            ],
+            providers: [
+                router_deprecated_1.ROUTER_PROVIDERS
+            ]
         }),
         router_deprecated_1.RouteConfig([
-            { path: "/Blog", name: "Blog", component: Blog_1.BlogComponent },
+            { path: "/Blog", name: "Blog", component: Blog_1.BlogComponent, useAsDefault: true },
             { path: "/NewPost", name: "NewPost", component: NewPost_1.NewPostComponent },
-            { path: "/About", name: "About", component: AboutInfo_1.AboutInfoComponent, useAsDefault: true }
+            { path: "/About", name: "About", component: AboutInfo_1.AboutInfoComponent },
+            { path: "/Book", name: "Book", component: Book_1.BookComponent }
         ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

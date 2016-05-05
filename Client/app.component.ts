@@ -3,18 +3,28 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from "@angular/route
 import { BlogComponent } from "./App/Blog/Blog";
 import { NewPostComponent } from "./App/NewPost/NewPost";
 import { AboutInfoComponent } from "./App/About/AboutInfo";
+import { BookComponent } from "./App/Book/Book";
 
 @Component({
     selector: "app-root",
     templateUrl: "Client/AppBase.html",
-    directives: [ROUTER_DIRECTIVES, BlogComponent, NewPostComponent, AboutInfoComponent],
-    providers: [ROUTER_PROVIDERS]
+    directives: [
+                    ROUTER_DIRECTIVES,
+                    BlogComponent,
+                    NewPostComponent,
+                    AboutInfoComponent,
+                    BookComponent
+                ],
+    providers: [
+                    ROUTER_PROVIDERS
+               ]
 })
 
 @RouteConfig([
-    { path: "/Blog", name: "Blog", component: BlogComponent },
+    { path: "/Blog", name: "Blog", component: BlogComponent, useAsDefault: true },
     { path: "/NewPost", name: "NewPost", component: NewPostComponent },
-    { path: "/About", name:"About", component: AboutInfoComponent, useAsDefault: true }
+    { path: "/About", name:"About", component: AboutInfoComponent },
+    { path: "/Book", name: "Book", component: BookComponent }
 ])
 
 export class AppComponent { 
