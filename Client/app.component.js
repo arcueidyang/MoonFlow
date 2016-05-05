@@ -10,9 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_deprecated_1 = require("@angular/router-deprecated");
-var Blog_1 = require("./Blog/Blog");
-var NewPost_1 = require("./NewPost/NewPost");
-var AboutInfo_1 = require("./About/AboutInfo");
+var Blog_1 = require("./App/Blog/Blog");
+var NewPost_1 = require("./App/NewPost/NewPost");
+var AboutInfo_1 = require("./App/About/AboutInfo");
 var AppComponent = (function () {
     function AppComponent() {
     }

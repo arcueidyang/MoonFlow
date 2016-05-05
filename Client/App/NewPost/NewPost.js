@@ -21,7 +21,8 @@ var NewPostComponent = (function () {
     NewPostComponent = __decorate([
         core_1.Component({
             selector: "new-post",
-            templateUrl: "Client/NewPost/NewPost.html"
+            templateUrl: "Client/App/NewPost/NewPost.html",
+            styleUrls: ["Client/Styles/NewPost.css"]
         }), 
         __metadata('design:paramtypes', [])
     ], NewPostComponent);

@@ -15,7 +15,8 @@ var BlogComponent = (function () {
     BlogComponent = __decorate([
         core_1.Component({
             selector: "blog-home",
-            templateUrl: "Client/Blog/Blog.html"
+            templateUrl: "Client/App/Blog/Blog.html",
+            styleUrls: ["Client/Styles/Blog.css"]
         }), 
         __metadata('design:paramtypes', [])
     ], BlogComponent);

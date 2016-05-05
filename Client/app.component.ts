@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from "@angular/router-deprecated";
-import { BlogComponent } from "./Blog/Blog";
-import { NewPostComponent } from "./NewPost/NewPost";
-import { AboutInfoComponent } from "./About/AboutInfo";
+import { BlogComponent } from "./App/Blog/Blog";
+import { NewPostComponent } from "./App/NewPost/NewPost";
+import { AboutInfoComponent } from "./App/About/AboutInfo";
 
 @Component({
     selector: "app-root",

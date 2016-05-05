@@ -33,7 +33,8 @@ var AboutInfoComponent = (function () {
     AboutInfoComponent = __decorate([
         core_1.Component({
             selector: "AboutInfo",
-            templateUrl: "Client/About/About.html"
+            templateUrl: "Client/App/About/About.html",
+            styleUrls: ["Client/Styles/About.css"],
         }), 
         __metadata('design:paramtypes', [])
     ], AboutInfoComponent);
