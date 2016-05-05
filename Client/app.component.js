@@ -19,14 +19,14 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "app-root",
-            template: "AppBase.html",
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
+            templateUrl: "Client/AppBase.html",
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES, Blog_1.BlogComponent, NewPost_1.NewPostComponent, AboutInfo_1.AboutInfoComponent],
             providers: [router_deprecated_1.ROUTER_PROVIDERS]
         }),
         router_deprecated_1.RouteConfig([
-            { path: "/blog", name: "blog", component: Blog_1.BlogComponent },
-            { path: "/newPost", name: "new post", component: NewPost_1.NewPostComponent },
-            { path: "/about", name: "about", component: AboutInfo_1.AboutInfoComponent, useAsDefault: true }
+            { path: "/Blog", name: "Blog", component: Blog_1.BlogComponent },
+            { path: "/NewPost", name: "NewPost", component: NewPost_1.NewPostComponent },
+            { path: "/About", name: "About", component: AboutInfo_1.AboutInfoComponent, useAsDefault: true }
         ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component ({
     selector: "new-post",
-    template: "./Blog.html"
+    templateUrl: "Client/NewPost/NewPost.html"
 })
 
 export class NewPostComponent {

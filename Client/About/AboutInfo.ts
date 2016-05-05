@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "AboutInfo",  
-  template: "./About.html"  
+  templateUrl: "Client/About/About.html"  
 })
 
 export class AboutInfoComponent {

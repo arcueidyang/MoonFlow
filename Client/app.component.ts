@@ -6,15 +6,15 @@ import { AboutInfoComponent } from "./About/AboutInfo";
 
 @Component({
     selector: "app-root",
-    template: "AppBase.html",
-    directives: [ROUTER_DIRECTIVES],
+    templateUrl: "Client/AppBase.html",
+    directives: [ROUTER_DIRECTIVES, BlogComponent, NewPostComponent, AboutInfoComponent],
     providers: [ROUTER_PROVIDERS]
 })
 
 @RouteConfig([
-    { path: "/blog", name: "blog", component: BlogComponent },
-    { path: "/newPost", name: "new post", component: NewPostComponent },
-    { path: "/about", name:"about", component: AboutInfoComponent, useAsDefault: true }
+    { path: "/Blog", name: "Blog", component: BlogComponent },
+    { path: "/NewPost", name: "NewPost", component: NewPostComponent },
+    { path: "/About", name:"About", component: AboutInfoComponent, useAsDefault: true }
 ])
 
 export class AppComponent { 
