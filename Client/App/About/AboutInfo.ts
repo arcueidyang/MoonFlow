@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 })
 
 export class AboutInfoComponent {
-    public title: string;
+    public name: string;
     public description: string[];        
     
     constructor() {
@@ -16,7 +16,7 @@ export class AboutInfoComponent {
     }
     
     private InitializePersonalInfo() {
-        this.title = "Yang";
+        this.name = "Yang";
         this.description = [
             "80年代末生人。",
             "少时求学于冀，而后问道于蜀，后赴美帝国主义追求学术和自由。",

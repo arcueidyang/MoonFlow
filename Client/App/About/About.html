@@ -2,8 +2,8 @@
     <h2>About</h2>
     <div>
         <img src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/538592_130030760476037_941423373_n.jpg?oh=dfb00bf5802823c0f34340b300bf5894&oe=574DF47F">
-        <div>{{name}}</div>
-        <div *ngFor="let descLine of description">
+        <h3>{{name}}</h3>
+        <div *ngFor="let descLine of description" class="description">
             <div>{{descLine}}</div>
         </div>
         <button class="facebook nav-icon" (click)="NavigateToFacebook()"></button>
