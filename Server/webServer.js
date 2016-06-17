@@ -6,7 +6,7 @@ var express = require("express");
 var mongoose = require("mongoose");
 
 var db = mongoose.connect("mongodb://localhost/bookAPI");
-var Book = require("./Models/BookModel");
+var BookTest = require("./Models/BookModel");
 
 var app = express();
 
@@ -15,11 +15,11 @@ var router = express.Router();
 
 router.route("/Books")
     .get(function(req, res) {
-       Book.find(function(err, books){
+       BookTest.find(function(err, books){
            if(err) {
                console.log(err);
            } else {
-               res.json(book);
+               res.json(books);
            }
        });
     });
