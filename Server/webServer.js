@@ -3,12 +3,29 @@
  */
 
 var express = require("express");
-var path = require("path");
+var mongoose = require("mongoose");
+
+var db = mongoose.connect("mongodb://localhost/bookAPI");
+var Book = require("./Models/BookModel");
+
 var app = express();
-var rootPath = path.normalize(__dirname + "/../Client/");
 
-app.use(express.static(rootPath));
+var port = 3000;
+var router = express.Router();
 
-var server = app.listen(8000, function() {
-    console.log("Server running at http://127.0.0.1:8000");
+router.route("/Books")
+    .get(function(req, res) {
+       Book.find(function(err, books){
+           if(err) {
+               console.log(err);
+           } else {
+               res.json(book);
+           }
+       });
+    });
+
+app.use("/api", router);
+
+app.listen(port, function() {
+    console.log("server has been set up and listening to port: " + port);
 });
