@@ -4,6 +4,8 @@
 
 var express = require("express");
 var mongoose = require("mongoose");
+var bodyParser = require("body-parser");
+var router = require("./Routes/BaseRouter");
 
 var db = mongoose.connect("mongodb://localhost/bookAPI");
 var BookTest = require("./Models/BookModel");
@@ -11,18 +13,10 @@ var BookTest = require("./Models/BookModel");
 var app = express();
 
 var port = 3000;
-var router = express.Router();
 
-router.route("/Books")
-    .get(function(req, res) {
-       BookTest.find(function(err, books){
-           if(err) {
-               console.log(err);
-           } else {
-               res.json(books);
-           }
-       });
-    });
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.use("/api", router);
 
