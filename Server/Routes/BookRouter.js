@@ -1,5 +1,5 @@
 var express = require("express");
-var BookTest = require("../Models/BookModel");
+var BookTest = require("../../Models/BookModel");
 
 var routes = function() {
     var router = express.Router();
@@ -20,7 +20,7 @@ var routes = function() {
             });
         });
 
-    router.use(":/bookId", function(req, res, next) {
+    router.use("/:bookId", function(req, res, next) {
         BookTest.findById(req.params.bookId, function(err, book) {
             if(err) {
                 res.status(500).send(err);
@@ -35,7 +35,7 @@ var routes = function() {
 
     router.route("/:bookId")
         .get(function(req, res) {
-            res.json(book);
+            res.json(req.book);
         })
         .put(function(req, res){
         	UpdateItem(req.book, req.body);

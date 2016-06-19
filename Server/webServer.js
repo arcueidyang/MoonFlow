@@ -5,7 +5,6 @@
 var express = require("express");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
-var router = require("./Routes/BaseRouter")();
 
 var db = mongoose.connect("mongodb://localhost/bookAPI");
 
@@ -13,9 +12,10 @@ var app = express();
 
 var port = 3000;
 
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+var router = require("./Routes/BaseRouter")();
 
 app.use("/api", router);
 
