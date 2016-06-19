@@ -5,10 +5,9 @@
 var express = require("express");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
-var router = require("./Routes/BaseRouter");
+var router = require("./Routes/BaseRouter")();
 
 var db = mongoose.connect("mongodb://localhost/bookAPI");
-var BookTest = require("./Models/BookModel");
 
 var app = express();
 
