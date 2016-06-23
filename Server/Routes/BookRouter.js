@@ -1,5 +1,5 @@
 var express = require("express");
-var BookTest = require("../../Models/BookModel");
+var BookTest = require("../Models/BookModel");
 
 var routes = function() {
     var router = express.Router();

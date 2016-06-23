@@ -5,6 +5,7 @@
 var express = require("express");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
+var path = require("path");
 
 var db = mongoose.connect("mongodb://localhost/bookAPI");
 
@@ -18,6 +19,9 @@ app.use(bodyParser.json());
 var router = require("./Routes/BaseRouter")();
 
 app.use("/api", router);
+app.use("/", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../Index.html"));
+});
 
 app.listen(port, function() {
     console.log("server has been set up and listening to port: " + port);

@@ -1,5 +1,5 @@
 var express = require("express");
-var Article = require("../../Models/ArticleModel");
+var Article = require("../Models/ArticleModel");
 
 var routes = function() {
     var router = express.Router();
