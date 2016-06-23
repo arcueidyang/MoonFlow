@@ -13,15 +13,14 @@ var app = express();
 
 var port = 3000;
 
+app.use(express.static(path.join(__dirname, "../Client")))
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 var router = require("./Routes/BaseRouter")();
 
 app.use("/api", router);
-app.use("/", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../Index.html"));
-});
 
 app.listen(port, function() {
     console.log("server has been set up and listening to port: " + port);
