@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>MoonFlow</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Client/Assets/title-icon.gif" />
+    <link rel="stylesheet" type="text/css" href="Client/Styles/Index.css" />
+
+    <script src="Client/Library/es6-shim.min.js"></script>
+
+    <script src="Client/Library/zone.js"></script>
+    <script src="Client/Library/Reflect.js"></script>
+    <script src="Client/Library/system.src.js"></script>
+    
+    <script src="Client/Library/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err);  });
+    </script>
+</head>
+<base href="/">
+<body class="page">    
+    <app-root>Loading...</app-root>    
+</body>
+</html>
