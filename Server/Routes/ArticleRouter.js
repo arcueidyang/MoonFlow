@@ -1,7 +1,14 @@
+/// <reference path="../../typings/body-parser/body-parser.d.ts" />
+/// <reference path="../../typings/express/express.d.ts" />
+/// <reference path="../../typings/mongoose/mongoose.d.ts" />
+
 var express = require("express");
 var Article = require("../Models/ArticleModel");
 
-var routes = function() {
+export class ArticleRouter {
+
+    
+}
     var router = express.Router();
 
     router.route("/")
