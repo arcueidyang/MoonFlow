@@ -3,7 +3,7 @@
 import * as mongoose from "mongoose";
 let Schema = mongoose.Schema;
 
-var bookModel = new Schema({
+let bookModel = new Schema({
    title: String,
    author: String, 
    genre: String,

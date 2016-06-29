@@ -1,5 +1,7 @@
-var express = require("express");
-var BookTest = require("../Models/BookModel");
+/// <reference path="../../typings/express/express.d.ts" />
+
+import * as express from "express";
+import BookTest = require("../Models/BookModel");
 
 var routes = function() {
     var router = express.Router();
@@ -20,7 +22,7 @@ var routes = function() {
             });
         });
 
-    router.use("/:bookId", function(req, res, next) {
+    router.use("/:bookId", (req, res, next) => {
         BookTest.findById(req.params.bookId, function(err, book) {
             if(err) {
                 res.status(500).send(err);
