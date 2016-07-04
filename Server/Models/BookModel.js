@@ -1,4 +1,4 @@
-/// <reference path="../../typings/mongoose/mongoose.d.ts" />
+"use strict"
 
 let mongoose = require("mongoose");
 let Schema = mongoose.Schema;

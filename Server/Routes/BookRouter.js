@@ -1,3 +1,5 @@
+"use strict"
+
 let express = require("express");
 let BookTest = require("../Models/BookModel");
 
@@ -79,3 +81,5 @@ function UpdateItem(itemToUpdate, sourceItem) {
     itemToUpdate.author = sourceItem.author;
     itemToUpdate.genre = sourceItem.genre;
 }
+
+module.exports = routes;

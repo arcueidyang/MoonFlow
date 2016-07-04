@@ -15,8 +15,8 @@ var app = express();
 var port = 3000;
 
 app.use(express.static(path.join(__dirname, "../")));
-app.use(body_parser_1.urlencoded({ extended: true }));
-app.use(body_parser_1.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 		
 var router = require("./Routes/BaseRouter")();
 		

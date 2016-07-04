@@ -1,8 +1,10 @@
+"use strict"
+
 let express = require("express");
 let Article = require("../Models/ArticleModel");
 
 let routes = function() {
-    let rouer = express.Router();
+    let router = express.Router();
     router.route("/")
 	    .post(function(req, res) {
     	    var article = new Article(req.body);
@@ -78,6 +80,8 @@ function UpdateItem(itemToUpdate, sourceItem) {
     itemToUpdate.author = sourceItem.author;
     itemToUpdate.genre = sourceItem.genre;
 }
+
+module.exports = routes;
 
 
 

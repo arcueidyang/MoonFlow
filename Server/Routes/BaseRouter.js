@@ -1,6 +1,8 @@
+"use strict"
+
 let express = require("express");		
-let BookRouter = require("./BookRouter")();		
-let ArticleRouter = require("./ArticleRouter")();		
+let BookRouter = require("./BookRouter");		
+let ArticleRouter = require("./ArticleRouter");		
 		
 let routes = function() {		
     let router = express.Router();		
