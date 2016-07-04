@@ -11,7 +11,6 @@ export class NewPostComponent {
     public content: string;
     
     constructor() {
-        
     }
     
     public SubmitPost() {
