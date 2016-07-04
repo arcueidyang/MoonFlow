@@ -1,6 +1,6 @@
 /// <reference path="../../typings/mongoose/mongoose.d.ts" />
 
-import * as mongoose from "mongoose";
+let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let bookModel = new Schema({
@@ -12,4 +12,4 @@ let bookModel = new Schema({
    rating: String  
 });
 
-export = mongoose.model("BookTest", bookModel);
+module.export = mongoose.model("BookTest", bookModel);

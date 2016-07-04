@@ -1,6 +1,4 @@
-/// <reference path="../../typings/mongoose/mongoose.d.ts" />
-
-import * as mongoose from "mongoose";
+let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let articleModel = new Schema({
@@ -12,4 +10,4 @@ let articleModel = new Schema({
     genre: String
 });
 
-export = mongoose.model("Article", articleModel);
+module.exports = mongoose.model("Article", articleModel);
