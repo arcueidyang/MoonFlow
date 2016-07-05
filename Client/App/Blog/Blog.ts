@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { OnInit } from "@angular/core";
+import { HTTP_PROVIDERS } from "@angular/http";
 import { Article } from "./Article";
 
 @Component({
@@ -7,23 +9,29 @@ import { Article } from "./Article";
     styleUrls: ["Client/Styles/Blog.css"]
 })
 
-export class BlogComponent {
+export class BlogComponent implements OnInit{
     public articles: Array<Article>;
-    
-    constructor() {
-        this.InitializeArticles();
+    public errorMessage: string;
+
+    private _blogService: BlogService;
+
+    constructor(service: BlogService) {
+        this._blogService = service;
+    }
+
+    public ngOnInit() {
+        this.GetAllArticles();
     }
     
-    private InitializeArticles() {
-        this.articles = [];
-        this.articles.push(new Article("111", "First article", "this is first article"));
-        this.articles.push(new Article("222", "Second article", "this is second article"));
-        this.articles.push(new Article("333", "Third article", "this is third article"));
-        this.articles.push(new Article("444", "Fourth article", "this is fourth article"));
-        this.articles.push(new Article("555", "Fifth article", "this is fifth article"));
+    private GetAllArticles() {
+        this._blogService.getBlogs()
+                            .subscribe(
+                                articles => this.articles = articles,
+                                error => this.errorMessage = error);
     }
-    
-    ngOnInit() {
+
+    private GetArticle() {
         
     }
+    
 }
