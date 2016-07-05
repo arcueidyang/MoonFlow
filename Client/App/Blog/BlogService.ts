@@ -16,12 +16,13 @@ export class BlogService {
     }
 
     public GetBlog(id: string) {
-
+        return this.http.get(this._getBlogUrl + id)
+                        .subscribe();
     }
 
     private ExtractData(response: Response) {
-        //TODO handle data
-        response;
+        let body = response.json();
+        return body.data || {};
     }
 
 }

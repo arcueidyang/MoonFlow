@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { NewPostService } from "./NewPostService";
 
 @Component ({
     selector: "new-post",
@@ -10,11 +11,12 @@ export class NewPostComponent {
     public title: string;
     public content: string;
     
-    constructor() {
+    constructor(private newPostService: NewPostService) {
     }
     
     public SubmitPost() {
         alert("Clicked submit post");
+        //TODO
     }
     
     public Cancel() {
