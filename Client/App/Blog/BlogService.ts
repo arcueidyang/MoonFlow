@@ -12,7 +12,8 @@ export class BlogService {
 
     public GetBlogs() {
         return this.http.get(this._getBlogUrl)
-                        .subscribe(this.ExtractData);
+                        .map(this.ExtractData)
+                        .catch();
     }
 
     public GetBlog(id: string) {
@@ -24,5 +25,4 @@ export class BlogService {
         let body = response.json();
         return body.data || {};
     }
-
 }
