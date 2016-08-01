@@ -1,12 +1,13 @@
 import { Component } from "@angular/core";
 import { NewPostService } from "./NewPostService";
-import { EditorDirective } from "../Shared/EditorDirective";
+import { EditorDirective } from "./EditorDirective";
+import { HighlightDirective } from "./HighlightDirective";
 
 @Component ({
     selector: "new-post",
-    directives: [EditorDirective],
     templateUrl: "Client/App/NewPost/NewPost.html",
-    styleUrls: ["Client/Styles/NewPost.css"]
+    styleUrls: ["Client/Styles/NewPost.css"],
+    directives: [EditorDirective, HighlightDirective]
 })
 
 export class NewPostComponent {

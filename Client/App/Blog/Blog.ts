@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { OnInit } from "@angular/core";
 import { HTTP_PROVIDERS } from "@angular/http";
 import { Article } from "./Article";
-import 
+import { BlogService } from "./BlogService";
 
 @Component({
     selector: "blog-home",
@@ -25,7 +25,7 @@ export class BlogComponent implements OnInit{
     }
     
     private GetAllArticles() {
-        this._blogService.getBlogs()
+        this._blogService.GetBlogs()
                             .subscribe(
                                 articles => this.articles = articles,
                                 error => this.errorMessage = error);
