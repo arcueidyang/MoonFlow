@@ -7,7 +7,8 @@ import { HighlightDirective } from "./HighlightDirective";
     selector: "new-post",
     templateUrl: "Client/App/NewPost/NewPost.html",
     styleUrls: ["Client/Styles/NewPost.css"],
-    directives: [EditorDirective, HighlightDirective]
+    directives: [EditorDirective, HighlightDirective],
+    providers: [NewPostService]
 })
 
 export class NewPostComponent {

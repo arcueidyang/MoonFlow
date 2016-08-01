@@ -1,6 +1,6 @@
 import { Directive } from "@angular/core";
 
-declare let tinyMce: any;
+declare let tinymce: any;
 
 @Directive ({
     inputs: ["htmlEditor"],
@@ -9,8 +9,8 @@ declare let tinyMce: any;
 
 export class EditorDirective {
     constructor() {
-        tinyMce.init({
-            selector: ".main-text-input",
+        tinymce.init({
+            selector: "textarea",
             schema: "html5"
         });
     } 

@@ -7,7 +7,8 @@ import { BlogService } from "./BlogService";
 @Component({
     selector: "blog-home",
     templateUrl: "Client/App/Blog/Blog.html",
-    styleUrls: ["Client/Styles/Blog.css"]
+    styleUrls: ["Client/Styles/Blog.css"],
+    providers:[BlogService]
 })
 
 export class BlogComponent implements OnInit{
