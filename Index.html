@@ -9,15 +9,19 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script src="Client/Library/tinymce/tinymce.min.js"></script>
     
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){ console.error(err);  });
+      System.import("app").catch(function(err){ console.error(err);  });
+
+      tinymce.init({
+          selector: "#main-text-area"
+      });
     </script>
 </head>
 <base href="/">
 <body class="page">    
-    <app-root>Loading...</app-root>    
+    <app-root>Loading...</app-root>
 </body>
 </html>
