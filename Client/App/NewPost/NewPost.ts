@@ -35,7 +35,9 @@ export class NewPostComponent implements OnInit {
     private InitRichTextEditor() {
         tinymce.init({
             selector: "#main-text-area",
-            schema: "html5"
+            schema: "html5",
+            height: 500,
+            resize: false
         });
     }
 } 
