@@ -1,11 +1,10 @@
 <h1>New Post</h1>
-<p myHighlight>try highlight</p>
 <div class="new-post">
     <div>
         <input [(ngModel)]="title"/>
     </div>
     <div>
-        <textarea id="main-text-area"></textarea>
+        <textarea htmlEditor id="main-text-area" [(ngModel)]="content"></textarea>
     </div>
     <div class="buttons">
         <button (click)="SubmitPost()">Submit</button>
