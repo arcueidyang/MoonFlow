@@ -6,8 +6,8 @@ let ArticleRouter = require("./ArticleRouter");
 		
 let routes = function() {		
     let router = express.Router();		
-    router.use("/book", BookRouter);		
-    router.use("/article", ArticleRouter);		
+    router.use("/book", BookRouter());		
+    router.use("/article", ArticleRouter());		
     return router;		
 };		
 

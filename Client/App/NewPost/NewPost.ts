@@ -36,7 +36,7 @@ export class NewPostComponent implements OnInit {
         tinymce.init({
             selector: "#main-text-area",
             schema: "html5",
-            height: 300,
+            height: 500,
             resize: false
         });
     }

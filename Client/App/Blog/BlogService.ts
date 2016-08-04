@@ -8,7 +8,7 @@ import "rxjs/add/operator/catch";
 
 @Injectable()
 export class BlogService {
-    private _getBlogUrl = "api/articles/";
+    private _getBlogUrl = "api/article/";
     
     constructor(private http: Http) {}
 
