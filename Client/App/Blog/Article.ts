@@ -6,8 +6,7 @@ export class Article {
     public TimeCreated: Date;
     
     
-    constructor(id: string, title: string, content: string) {
-        this.Id = id;
+    constructor(title: string, content: string) {
         this.Title = title;
         this.Content = content;
         this.TimeCreated = new Date();

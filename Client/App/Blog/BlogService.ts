@@ -12,7 +12,7 @@ export class BlogService {
     
     constructor(private http: Http) {}
 
-    public GetBlogs() {
+    public GetBlogs(): Observable<Article[]> {
         return this.http.get(this._getBlogUrl)
                         .map(this.ExtractData)
                         .catch(this.HandleError);

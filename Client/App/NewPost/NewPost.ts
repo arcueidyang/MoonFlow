@@ -1,3 +1,4 @@
+import { Article } from "../Blog/Article";
 import { Component, OnInit } from "@angular/core";
 import { NewPostService } from "./NewPostService";
 import { EditorDirective } from "../Shared/Directives/EditorDirective";
@@ -24,8 +25,11 @@ export class NewPostComponent implements OnInit {
     }
 
     public SubmitPost() {
-        alert("Clicked submit post");
-        //TODO
+        let newArticle = new Article(
+            this.title,
+            this.content        
+        );
+        this.newPostService.PostArticle(newArticle);
     }
     
     public Cancel() {
