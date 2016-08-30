@@ -7,6 +7,7 @@ let routes = function() {
     let router = express.Router();
     router.route("/")
 	    .post(function(req, res) {
+            console.log(req.body);
     	    var article = new Article(req.body);
     	    article.save();
             res.status(201).send(article);
