@@ -25,7 +25,7 @@ export class BlogService {
 
     private ExtractData(response: Response) {
         let body = response.json();
-        return body.data || {};
+        return body || {};
     }
 
     private HandleError(error: any) {

@@ -26,8 +26,6 @@ export class NewPostComponent implements OnInit {
 
     public SubmitPost() {
         let newArticle = new Article(
-            this.title,
-            this.content        
         );
         this.newPostService.PostArticle(newArticle);
     }

@@ -27,7 +27,7 @@ export class BlogComponent implements OnInit{
     
     private GetAllArticles() {
         this._blogService.GetBlogs().subscribe(
-            articles => this.articles = articles && articles.length && articles.length !== 0 ? articles : [],
+            articles => this.articles = articles,
             error => this.errorMessage = error);
     }    
 }

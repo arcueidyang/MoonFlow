@@ -1,14 +1,12 @@
 export class Article {
-    public Id: string;
-    public Author: string;
-    public Title: string;
-    public Content: string;
-    public TimeCreated: Date;
+    public _id: string;
+    public title: string;
+    public body: string;
+    public author: string;
+    public creationTime: string;
+    public lastEditTime: string;
+    public genre: string;
     
-    
-    constructor(title: string, content: string) {
-        this.Title = title;
-        this.Content = content;
-        this.TimeCreated = new Date();
+    constructor() {
     }
 }

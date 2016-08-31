@@ -16,7 +16,7 @@ export class NewPostService {
 
     private HandleResponse(response: Response) {
         let body = response.json();
-        return body.data || {};
+        return body || {};
     }
 
 }
