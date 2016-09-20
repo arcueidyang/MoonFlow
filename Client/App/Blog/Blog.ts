@@ -12,7 +12,7 @@ import { BlogService } from "./BlogService";
 })
 
 export class BlogComponent implements OnInit{
-    public articles: Array<Article>;
+    public articles: Array<Article> = [];
     public errorMessage: string;
 
     private _blogService: BlogService;
