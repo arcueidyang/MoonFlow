@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Http, Response } from "@angular/http";
+import { Headers, Http, RequestOptions, Response } from "@angular/http";
 
 import { Article } from "../Blog/Article";
 import { Observable } from "rxjs/Observable";
@@ -11,7 +11,11 @@ export class NewPostService {
     constructor(private http: Http) {}
 
     public PostArticle(article: Article) {
-        this.http.post(this.newPostUrl, JSON.stringify(article)).subscribe(this.HandleResponse);
+        let body = JSON.stringify(article);
+        let headers = new Headers({ "Content-Type": "application/json"});
+        let options = new RequestOptions({headers: headers});
+
+        this.http.post(this.newPostUrl, body, options).subscribe(this.HandleResponse);
     }
 
     private HandleResponse(response: Response) {

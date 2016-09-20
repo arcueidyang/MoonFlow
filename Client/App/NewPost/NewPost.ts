@@ -25,13 +25,22 @@ export class NewPostComponent implements OnInit {
     }
 
     public SubmitPost() {
-        let newArticle = new Article(
-        );
+        let newArticle = new Article();
+        newArticle.author = "Yang";
+        newArticle.body = this.content;
+        newArticle.creationTime = Date.now().toString();
+        newArticle.genre = "test";
+        newArticle.lastEditTime = Date.now().toString();
+        newArticle.title = this.title;
         this.newPostService.PostArticle(newArticle);
     }
     
-    public Cancel() {
-        alert("Clicked cancel");
+    public Clear() {
+        var isClear = window.confirm("Do you really want to clear the post?");
+        if(isClear) {
+            this.title = "";
+            this.content = "";    
+        }
     }
 
     private InitRichTextEditor() {
