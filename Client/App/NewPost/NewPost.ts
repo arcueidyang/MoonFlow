@@ -15,7 +15,6 @@ declare let tinymce: any;
 
 export class NewPostComponent implements OnInit {
     public title: string;
-    public content: string;
     
     constructor(private newPostService: NewPostService) {
     }
@@ -27,7 +26,7 @@ export class NewPostComponent implements OnInit {
     public SubmitPost() {
         let newArticle = new Article();
         newArticle.author = "Yang";
-        newArticle.body = this.content;
+        newArticle.body = tinymce.activeEditor.getContent();
         newArticle.creationTime = Date.now().toString();
         newArticle.genre = "test";
         newArticle.lastEditTime = Date.now().toString();
@@ -39,7 +38,7 @@ export class NewPostComponent implements OnInit {
         var isClear = window.confirm("Do you really want to clear the post?");
         if(isClear) {
             this.title = "";
-            this.content = "";    
+            tinymce.activeEditor.setContent("");    
         }
     }
 
