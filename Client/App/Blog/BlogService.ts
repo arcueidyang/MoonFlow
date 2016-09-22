@@ -18,9 +18,10 @@ export class BlogService {
                         .catch(this.HandleError);
     }
 
-    public GetBlog(id: string) {
+    public GetBlog(id: string): Observable<Article> {
         return this.http.get(this._getBlogUrl + id)
-                        .subscribe();
+                        .map(this.ExtractData)
+                        .catch(this.HandleError);
     }
 
     private ExtractData(response: Response) {

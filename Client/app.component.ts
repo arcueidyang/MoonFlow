@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from "@angular/router-deprecated";
-import { BlogComponent } from "./App/Blog/Blog";
+import { BlogListComponent } from "./App/Blog/BlogList";
 import { NewPostComponent } from "./App/NewPost/NewPost";
 import { AboutInfoComponent } from "./App/About/AboutInfo";
 import { BookComponent } from "./App/Book/Book";
