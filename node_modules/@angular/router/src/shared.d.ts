@@ -1,3 +1,4 @@
+
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -6,17 +7,22 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Name of the primary outlet.
- * @type {string}
+ * @whatItDoes Name of the primary outlet.
  *
- * @experimental
+ * @stable
  */
 export declare const PRIMARY_OUTLET: string;
 /**
  * A collection of parameters.
  *
- * @experimental
+ * @stable
  */
 export declare type Params = {
     [key: string]: any;
 };
+export declare class NavigationCancelingError extends Error {
+    message: string;
+    stack: any;
+    constructor(message: string);
+    toString(): string;
+}

@@ -19,7 +19,8 @@ import { BlogComponent } from "./Blog";
 })
 
 @RouteConfig([
-    { path: "/:id", name: "Blog", component: BlogComponent, useAsDefault: false }
+    { path: "/:id", name: "Blog", component: BlogComponent, useAsDefault: false },
+    { path: ""}
 ])
 
 export class BlogListComponent implements OnInit{

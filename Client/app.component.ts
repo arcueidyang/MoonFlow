@@ -10,7 +10,7 @@ import { BookComponent } from "./App/Book/Book";
     templateUrl: "Client/AppBase.html",
     directives: [
                     ROUTER_DIRECTIVES,
-                    BlogComponent,
+                    BlogListComponent,
                     NewPostComponent,
                     AboutInfoComponent,
                     BookComponent
@@ -21,7 +21,7 @@ import { BookComponent } from "./App/Book/Book";
 })
 
 @RouteConfig([
-    { path: "/Blog", name: "Blog", component: BlogComponent, useAsDefault: true },
+    { path: "/Blog", name: "Blog", component: BlogListComponent, useAsDefault: true },
     { path: "/NewPost", name: "NewPost", component: NewPostComponent },
     { path: "/About", name:"About", component: AboutInfoComponent },
     { path: "/Book", name: "Book", component: BookComponent }
