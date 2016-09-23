@@ -1,5 +1,5 @@
 {
-  "name": "angular2-quickstart",
+  "name": "moonflow",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && nodemon Server/webServer.js",

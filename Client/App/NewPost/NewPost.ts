@@ -1,7 +1,6 @@
 import { Article } from "../Blog/Article";
 import { Component, OnInit } from "@angular/core";
 import { NewPostService } from "./NewPostService";
-import { EditorDirective } from "../Shared/Directives/EditorDirective";
 
 declare let tinymce: any;
 
@@ -9,7 +8,6 @@ declare let tinymce: any;
     selector: "new-post",
     templateUrl: "Client/App/NewPost/NewPost.html",
     styleUrls: ["Client/Styles/NewPost.css"],
-    directives: [EditorDirective],
     providers: [NewPostService]
 })
 

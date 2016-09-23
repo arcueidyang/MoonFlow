@@ -1,10 +1,10 @@
     <div class="content">
         <div class="top-nav">
             <ul class="nav">
-                <li><a [routerLink]="['Blog']">Blog</a></li>
-                <li><a [routerLink]="['NewPost']">New Post</a></li>
-                <li><a [routerLink]="['About']">About</a></li>
-                <li><a [routerLink]="['Book']">Book</a></li>
+                <li><a routerLink="/Blog" routerLinkActive="active">Blog</a></li>
+                <li><a routerLink="/NewPost">New Post</a></li>
+                <li><a routerLink="/About">About</a></li>
+                <li><a routerLink="/Book">Book</a></li>
             </ul>
             <router-outlet></router-outlet>
         </div>
