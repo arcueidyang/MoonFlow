@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Article } from "./Article";
 import { BlogService } from "./BlogService";
 import { BlogComponent } from "./Blog";
@@ -19,10 +20,9 @@ export class BlogListComponent implements OnInit{
     public articles: Array<Article> = [];
     public errorMessage: string;
 
-    private _blogService: BlogService;
-
-    constructor(service: BlogService) {
-        this._blogService = service;
+    constructor(
+        private router: Router,
+        private service: BlogService) {
     }
 
     public ngOnInit() {
@@ -30,7 +30,7 @@ export class BlogListComponent implements OnInit{
     }
     
     private GetAllArticles() {
-        this._blogService.GetBlogs().subscribe(
+        this.service.GetBlogs().subscribe(
             articles => this.articles = articles,
             error => this.errorMessage = error);
     }    

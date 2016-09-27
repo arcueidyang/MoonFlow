@@ -4,11 +4,13 @@ import { FormsModule }    from "@angular/forms";
 
 import { BlogListComponent } from "./BlogList";
 import { BlogComponent } from "./Blog";
+import { BlogRouting } from "./Blog.routing";
 
 @NgModule({
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        BlogRouting
     ],
     declarations: [
         BlogListComponent,
