@@ -3,6 +3,15 @@ import { Router, ActivatedRoute, Params } from "@angular/router";
 import { Article } from "./Article";
 import { BlogService } from "./BlogService";
 
+@Component({
+    selector: "blog-body",
+    templateUrl: "Client/App/Blog/Blog.html",
+    styleUrls: ["Client/Styles/Blog.css"],
+    providers:[
+                  BlogService,
+              ]
+})
+
 export class BlogComponent implements OnInit{
 
     private article: Article;

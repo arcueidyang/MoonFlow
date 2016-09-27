@@ -6,6 +6,8 @@ import { BlogListComponent } from "./BlogList";
 import { BlogComponent } from "./Blog";
 import { BlogRouting } from "./Blog.routing";
 
+import { BlogService } from "./BlogService";
+
 @NgModule({
     imports: [
         CommonModule,
@@ -17,7 +19,7 @@ import { BlogRouting } from "./Blog.routing";
         BlogComponent
     ],
     providers: [
-
+        BlogService
     ]
 
 })

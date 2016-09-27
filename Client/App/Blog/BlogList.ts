@@ -9,7 +9,6 @@ import { BlogComponent } from "./Blog";
     selector: "blog-home",
     templateUrl: "Client/App/Blog/BlogList.html",
     styleUrls: ["Client/Styles/Blog.css"],
-
     providers:[
                   BlogService,
               ]
@@ -29,6 +28,10 @@ export class BlogListComponent implements OnInit{
         this.GetAllArticles();
     }
     
+    public onSelect(article: Article) {
+        this.router.navigate(["Blog", article._id]);
+    }
+
     private GetAllArticles() {
         this.service.GetBlogs().subscribe(
             articles => this.articles = articles,

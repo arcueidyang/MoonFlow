@@ -5,6 +5,8 @@ import { FormsModule }    from '@angular/forms';
 import { AppComponent }         from './app.component';
 import { routing, appRoutingProviders }  from './app.routing';
 
+import { BlogModule } from "./App/Blog/Blog.Module";
+
 import { BlogListComponent } from "./App/Blog/BlogList";
 import { NewPostComponent } from "./App/NewPost/NewPost";
 import { AboutInfoComponent } from "./App/About/AboutInfo";
@@ -16,7 +18,8 @@ import { BookComponent } from "./App/Book/Book";
         FormsModule,
         HttpModule,
         JsonpModule,
-        routing
+        routing,
+        BlogModule
     ],
     declarations: [
         AppComponent,
