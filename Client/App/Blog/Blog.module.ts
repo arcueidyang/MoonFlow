@@ -2,9 +2,10 @@ import { NgModule }       from "@angular/core";
 import { CommonModule }   from "@angular/common";
 import { FormsModule }    from "@angular/forms";
 
+import { BlogRoutingModule } from "./Blog.routing";
+
 import { BlogListComponent } from "./BlogList";
 import { BlogComponent } from "./Blog";
-import { BlogRouting } from "./Blog.routing";
 
 import { BlogService } from "./BlogService";
 
@@ -12,7 +13,7 @@ import { BlogService } from "./BlogService";
     imports: [
         CommonModule,
         FormsModule,
-        BlogRouting
+        BlogRoutingModule
     ],
     declarations: [
         BlogListComponent,
@@ -21,7 +22,6 @@ import { BlogService } from "./BlogService";
     providers: [
         BlogService
     ]
-
 })
 
 export class BlogModule {}
