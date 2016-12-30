@@ -1,4 +1,4 @@
-import { ModuleWithProviders }  from '@angular/core';
+import { NgModule }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { BlogListComponent } from "./BlogList";
@@ -9,4 +9,13 @@ const BlogRoutes : Routes = [
     { path: "Blog/:id", component: BlogComponent }
 ]
 
-export const BlogRouting : ModuleWithProviders = RouterModule.forChild(BlogRoutes);
+@NgModule({
+    imports: [
+        RouterModule.forChild(BlogRoutes)
+    ],
+    exports: [
+        RouterModule
+    ]
+})
+
+export class BlogRoutingModule {}
