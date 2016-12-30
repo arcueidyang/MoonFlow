@@ -14,7 +14,7 @@ import { BlogService } from "./BlogService";
 
 export class BlogComponent implements OnInit{
 
-    private article: Article;
+    private article: Article = new Article();
 
     constructor(
         private route: ActivatedRoute,
