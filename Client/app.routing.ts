@@ -1,4 +1,4 @@
-import { ModuleWithProviders } from "@angular/core";
+import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { BlogListComponent } from "./App/Blog/BlogList";
@@ -11,9 +11,17 @@ const appRoutes: Routes = [
     { path: "NewPost", component: NewPostComponent },
     { path: "About", component: AboutInfoComponent },
     { path: "Book", component: BookComponent },
-    { path: "", component: BlogListComponent }
+    { path: "", redirectTo: 'Blog', pathMatch: 'full'},
+    { path: "**", component: BlogListComponent }
 ];    
 
-export const appRoutingProviders: any[] = [];
+@NgModule({
+    imports: [
+        RouterModule.forRoot(appRoutes)
+    ],
+    exports: [
+        RouterModule
+    ]
+})
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+export class AppRoutingModule {}
