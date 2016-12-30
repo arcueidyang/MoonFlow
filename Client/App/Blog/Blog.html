@@ -7,7 +7,6 @@
         <span class="article-single-author">{{ article.author }}</span>
         <span class="article-single-time">{{ article.lastEditTime }}</span>
     </div>
-    <div class="article-single-body">
-        {{ article.body }}
+    <div class="article-single-body" [innerHTML] = "article.body">
     </div>
 </div>
