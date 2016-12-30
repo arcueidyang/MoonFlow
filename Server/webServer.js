@@ -21,6 +21,10 @@ app.use(bodyParser.json());
 var router = require("./Routes/BaseRouter")();
 		
 app.use("/api", router);
+app.all("/*", function(req, res, next) {
+    res.sendFile(path.join(__dirname, "../Index.html"));
+});
+
 app.listen(port, function () {
     console.log("server has been set up and listening to port: " + port);
 });
