@@ -2,3 +2,28 @@
     margin: 20px auto;
     text-align: left;
 }
+
+.article-single-title {
+    text-align: center;
+}
+
+.article-single-main {
+    text-align: center;
+}
+
+.article-single-main .article-single-subtitle{
+    display: block;
+}
+
+.article-single-main .article-single-author {
+    /*float: left;*/
+}
+
+.article-single-main .article-single-time {
+    /*float: left;*/
+}
+
+.article-single-main .article-single-body {
+    margin: 20px;
+
+}

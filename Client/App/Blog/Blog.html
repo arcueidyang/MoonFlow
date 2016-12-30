@@ -1,3 +1,13 @@
-<div>
-    {{ article.body }}
+<h3 class="article-single-title">
+    {{ article.title }}
+</h3>
+
+<div class="article-single-main">
+    <div class="article-single-subtitle">
+        <span class="article-single-author">{{ article.author }}</span>
+        <span class="article-single-time">{{ article.lastEditTime }}</span>
+    </div>
+    <div class="article-single-body">
+        {{ article.body }}
+    </div>
 </div>
