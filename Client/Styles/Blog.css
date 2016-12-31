@@ -1,6 +1,16 @@
-.article-title {
+.article-list-title {
     margin: 20px auto;
     text-align: left;
+    cursor: pointer;
+}
+
+.article-list-title:visited {
+    color: purple;
+}
+
+.article-list-title:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .article-single-title {
@@ -24,6 +34,6 @@
 }
 
 .article-single-main .article-single-body {
-    margin: 20px;
+    margin-top: 50px;
 
 }
