@@ -24,6 +24,17 @@ export class BlogService {
                         .catch(this.HandleError);
     }
 
+    public UpdateBlog(id: string, article: Article): Observable<Article> {
+        return this.http.post(this._getBlogUrl + id, article)
+                        .map(this.ExtractData)
+                        .catch(this.HandleError);
+    }
+
+    public DeleteBlog(id: string) {
+        return this.http.delete(this._getBlogUrl + id)
+                        .catch(this.HandleError);
+    }
+
     private ExtractData(response: Response) {
         let body = response.json();
         return body || {};

@@ -34,4 +34,14 @@ export class BlogComponent implements OnInit{
         this.router.navigate(["Blog"]);
     }
 
+    public DeleteBlog() {
+        let result: boolean = window.confirm("Do you really want to delete article " + this.article.title);
+        if(result) {
+            this.service.DeleteBlog(this.article._id).subscribe(() => {
+                this.BackToBlogList();
+            });
+        }
+
+    }
+
 }

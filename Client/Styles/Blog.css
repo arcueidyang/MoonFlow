@@ -35,5 +35,15 @@
 
 .article-single-main .article-single-body {
     margin-top: 50px;
+}
 
+.article-single-main .buttons {
+    position: relative;
+    margin-top: 100%;
+    float: right;
+}
+
+.article-single-main .buttons button{
+    width: 100px;
+    height: 30px;
 }
